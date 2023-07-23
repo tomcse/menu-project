@@ -16,8 +16,8 @@ const MenuItem = ({ desc, img, price, title }) => {
           </header>
           <div className="item-text">
             <p>
-              {showInfo ? desc : `${desc.substring(0, 130)} `}
-              {desc.length > 130 && (
+              {showInfo ? desc : `${desc.substring(0, 105)} `}
+              {desc.length > 107 && (
                 <button
                   type="button"
                   className="btn"

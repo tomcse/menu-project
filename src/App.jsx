@@ -5,7 +5,7 @@ import Categories from "./components/Categories";
 
 const tempCategories = [
   "All",
-  ...new Set(menuItems.map((item) => item.category)),
+  ...new Set(menuData.map((item) => item.category)),
 ];
 
 const App = () => {

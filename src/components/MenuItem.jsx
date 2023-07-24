@@ -3,8 +3,7 @@ import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
 
 const MenuItem = ({ desc, img, price, title }) => {
   const [showInfo, setShowInfo] = useState(false);
-  console.log(desc.length);
-  console.log(typeof desc.length);
+
   return (
     <article>
       <div className="menu-item">

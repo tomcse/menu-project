@@ -4,10 +4,10 @@ import Category from "./Category";
 const Categories = ({ categoryNames, menuItems, filterByCategory }) => {
   return (
     <section className="btn-container">
-      {categoryNames.map((categoryName, index) => {
+      {categoryNames.map((categoryName) => {
         return (
           <Category
-            key={index}
+            key={categoryName}
             categoryName={categoryName}
             menuItems={menuItems}
             filterByCategory={filterByCategory}

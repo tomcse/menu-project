@@ -3,14 +3,13 @@ import menuData from "./data";
 import Menu from "./components/Menu";
 import Categories from "./components/Categories";
 
+const tempCategories = [
+  "All",
+  ...new Set(menuItems.map((item) => item.category)),
+];
+
 const App = () => {
   const [menuItems, setMenuItems] = useState(menuData);
-
-  const tempCategories = [
-    "All",
-    ...new Set(menuItems.map((item) => item.category)),
-  ];
-
   const [categoryNames, setCategoryNames] = useState(tempCategories);
 
   const filterByCategory = (categoryName) => {

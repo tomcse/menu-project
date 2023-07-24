@@ -15,6 +15,7 @@ const App = () => {
   const filterByCategory = (categoryName) => {
     if (categoryName === "All") {
       setMenuItems(menuData);
+      return;
     } else {
       const newItems = menuData.filter(
         (item) => item.category === categoryName

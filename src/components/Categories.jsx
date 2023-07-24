@@ -1,7 +1,7 @@
 import React from "react";
 import Category from "./Category";
 
-const Categories = ({ categoryNames, menuItems, filterByCategory }) => {
+const Categories = ({ categoryNames, filterByCategory }) => {
   return (
     <section className="btn-container">
       {categoryNames.map((categoryName) => {
@@ -9,7 +9,6 @@ const Categories = ({ categoryNames, menuItems, filterByCategory }) => {
           <Category
             key={categoryName}
             categoryName={categoryName}
-            menuItems={menuItems}
             filterByCategory={filterByCategory}
           />
         );

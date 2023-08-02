@@ -1,6 +1,6 @@
 ## Details
 
-- created menu with abilioty to filter based on categories
+- created menu with ability to filter based on categories
 - made use of Set()
 
 ## Figma URL
